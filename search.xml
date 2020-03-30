@@ -3,7 +3,7 @@
   <entry>
     <title>小白捣腾博客hexo</title>
     <url>/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/</url>
-    <content><![CDATA[<p>偶买噶，又在环境里整了半天</p>
+    <content><![CDATA[<h3 id="小白捣腾博客hexo"><a href="#小白捣腾博客hexo" class="headerlink" title="小白捣腾博客hexo"></a>小白捣腾博客hexo</h3><p>偶买噶，又在环境里整了半天</p>
 <p>整了半天，总算有个博客了</p>
 <p><code>hexo generate</code>：生成静态页面(简写为 hexo g)</p>
 <p><code>hexo clean</code>：清除/public的文件</p>
@@ -19,13 +19,13 @@
 <p>下载下来的主题在<code>themes</code>，根目录下<code>_config.yml</code>设置，图片在同级目录的<code>source/images</code>下</p>
 </li>
 </ol>
-<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/C:%5CUsers%5C%E9%99%88%E6%99%93%E7%90%AA%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585553950335.png" alt="1585553950335"></p>
+<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/1585553950335.png" alt></p>
 <ol start="2">
 <li>去掉作者的github链接(单纯觉得不好看)</li>
 </ol>
-<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/C:%5CUsers%5C%E9%99%88%E6%99%93%E7%90%AA%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585554340463.png" alt="1585554340463"></p>
+<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/1585554340463.png" alt></p>
 <p>…一开始走了很多迷糊路，想去具体的ayer.ejs把对应的html给删除，但是这里容易出错，会显示<code>enable</code>这个变量不可读</p>
-<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/C:%5CUsers%5C%E9%99%88%E6%99%93%E7%90%AA%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585568931288.png" alt="1585568931288"></p>
+<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/1585568931288.png" alt></p>
 <p>强烈建议各位刚开始用hexo的小伙伴，专注看你下载的主题<code>themes</code>的配置文件<code>_config.yml</code>、<code>layout/_config.yml</code>。这两个文件认真看，可以节省很多时间，还有不懂的地方可以结合<a href="https://hexo.io/" target="_blank" rel="noopener">hexo官方文档</a>。</p>
 <p>下面就是开始往你的博客放东西啦，这里我也走了不少弯路。。。</p>
 <p>不过如果你想自己来写一个，参考一下别人的代码也是不错的</p>
@@ -34,7 +34,7 @@
 <ol>
 <li><p>出现<code>FATAL bad indentation of a mapping entry at line 113, column 9，type: atom</code></p>
 <p>原因：<code>clone</code>了插件之后，配置<code>config.yml</code>（是工程根目录下的）时候要把<code>feed：</code>后的<code>m</code>去掉</p>
-<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/C:%5CUsers%5C%E9%99%88%E6%99%93%E7%90%AA%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585577608562.png" alt="1585577608562"></p>
+<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/1585577608562.png" alt></p>
 </li>
 </ol>
 <p>这里<code>clone</code>的是<code>hexo-generate-feed</code>插件，可以帮助生成<code>xml</code>文件，读取帖子的所有内容，否则只摘要帖子的前140个字符</p>
@@ -43,15 +43,18 @@
 <p>原因：<code>hexo</code>默认无法处理文章中插入的图片，需要安装插件</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --sav</span><br></pre></td></tr></table></figure>
 
-<p>-首先修改配置<code>_config.yml</code>，<code>post_asset_folder:false</code>改为<code>true</code></p>
-<p>-使用命令</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo n xxxx &#x2F;&#x2F;会生成一个xxxx.md和xxxx的文件夹，把需要的图片放入xxxx文件夹就可以了，你想错了。。。，是我想错了，ps！这里的xxxx是指你要放照片的文档的名字</span><br></pre></td></tr></table></figure>
-
-<p>ohs，在我的归档记录里，就很奇怪</p>
-<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/C:%5CUsers%5C%E9%99%88%E6%99%93%E7%90%AA%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585581138985.png" alt="1585581138985"></p>
+<p>-首先修改配置<code>_config.yml</code></p>
+<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/1585585228795.png" alt></p>
+<p>启动资源文件夹，当资源文件管理功能打开后，Hexo将会在你每一次通过 <code>hexo new [layout] &lt;title&gt;</code> 命令创建新文章时自动创建一个文件夹。这个资源文件夹将会有与这个文章文件一样的名字。将所有与你的文章有关的资源放在这个关联文件夹中之后，你可以通过相对路径来引用它们，这样你就得到了一个更简单而且方便得多的工作流。</p>
 </li>
 </ol>
-<p><img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/C:%5CUsers%5C%E9%99%88%E6%99%93%E7%90%AA%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1585584271413.png" alt="1585584271413"></p>
+<p>   -使用命令</p>
+   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo n xxxx &#x2F;&#x2F;会生成一个xxxx.md和xxxx的文件夹，把需要的图片放入xxxx文件夹就可以了，因为理解错误，卡了挺久，这里的xxxx是指你要放照片的文档的名字</span><br></pre></td></tr></table></figure>
+
+<p>   在<code>markdown</code>，引用的话直接<code>![](ssss.jpg)</code>，这里对应是你图片的名字</p>
+<p>   <img src="/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/1585586331665.png" alt></p>
+<p>我试过换hexo-asset-image包的版本的方法，不适应</p>
+<p>果然还是那句话，官方文档](<a href="https://hexo.io/zh-cn/docs/asset-folders" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/asset-folders</a>) 比什么都好使。</p>
 <p>终于安置好了。</p>
 ]]></content>
       <tags>
