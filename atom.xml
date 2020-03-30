@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kellyjackie</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://kittychen.github.io/"/>
+  <updated>2020-03-30T15:59:37.000Z</updated>
+  <id>https://kittychen.github.io/</id>
+  
+  <author>
+    <name>Kellyjackie</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小白捣腾博客hexo</title>
+    <link href="https://kittychen.github.io/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/"/>
+    <id>https://kittychen.github.io/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/</id>
+    <published>2020-03-30T15:59:37.000Z</published>
+    <updated>2020-03-30T15:59:37.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;偶买噶，又在环境里整了半天&lt;/p&gt;
+&lt;p&gt;整了半天，总算有个博客了&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hexo generate&lt;/code&gt;：生成静态页面(简写为 hexo g)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;hexo
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="hexo" scheme="https://kittychen.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客之路开始了</title>
+    <link href="https://kittychen.github.io/2020/03/29/%E5%8D%9A%E5%AE%A2%E4%B9%8B%E8%B7%AF%E5%BC%80%E5%A7%8B%E4%BA%86/"/>
+    <id>https://kittychen.github.io/2020/03/29/%E5%8D%9A%E5%AE%A2%E4%B9%8B%E8%B7%AF%E5%BC%80%E5%A7%8B%E4%BA%86/</id>
+    <published>2020-03-29T13:57:29.000Z</published>
+    <updated>2020-03-29T13:57:29.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;很开始能来到hexo，拥有属于自己的一个博客！&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="心情" scheme="https://kittychen.github.io/tags/%E5%BF%83%E6%83%85/"/>
+    
+  </entry>
+  
+</feed>
