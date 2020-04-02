@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Git安装和一些常见指令操作</title>
-    <url>/2020/04/02/Git%E5%AE%89%E8%A3%85%E5%92%8C%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
+    <title>Git安装 | 一些常见指令操作 | 连接到github</title>
+    <url>/2020/04/02/git/</url>
+    <content><![CDATA[<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
 <li><code>git clone [url]</code>：下载库的链接，打开自己库就可以复制到bash</li>
 <li><code>git remote set-url 对应的ssh链接</code></li>
 </ul>
@@ -15,47 +15,65 @@
 </ul>
 <h4 id="提交到Git库-一定要在一开始创建的目录下"><a href="#提交到Git库-一定要在一开始创建的目录下" class="headerlink" title="提交到Git库(一定要在一开始创建的目录下)"></a>提交到Git库(一定要在一开始创建的目录下)</h4><ul>
 <li><code>git add</code>：把文件添加到缓冲区，等待提交</li>
-<li><code>git commit</code>：把文件提交到仓库，可以加上 <code>-m &quot;xxx&quot;</code> 输入本次提交的说明，<code>1 file changed</code>：1个文件被改动；<code>2 insertions</code>：插入了两行内容</li>
+<li><code>git commit -m &quot;xxx&quot;</code>：把文件提交到仓库，可以加上 <code>-m &quot;xxx&quot;</code> 输入本次提交的说明，<code>1 file changed</code>：1个文件被改动；<code>2 insertions</code>：插入了两行内容</li>
 <li>为什么需要<code>add</code>，<code>commit</code>，因为可以一次提交多个<code>add</code>不同的文件</li>
 </ul>
-<h4 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h4><ul>
-<li><p><code>git status</code>：查看工作区的工作状态</p>
-</li>
-<li><p><code>git diff</code>：如果<code>git status</code>显示修改过，则可以查看修改内容</p>
-</li>
-<li><p><code>git branch -a</code>：查看当前的分支情况</p>
-</li>
-<li><p><code>git checkout -b dev</code>：创建一个新的分支，dev代表development，开发分支</p>
-</li>
-<li><p><code>git checkout master</code>：切换到master分支下</p>
-</li>
-<li><p><code>git merge dev</code>：在要合并到的主分支（master）下操作，将dev合并到master</p>
-</li>
+<h4 id="Git操作"><a href="#Git操作" class="headerlink" title="Git操作"></a>Git操作</h4><ul>
+<li><code>git status</code>：查看工作区的工作状态</li>
+<li><code>git diff</code>：如果<code>git status</code>显示修改过，则可以查看修改内容</li>
+<li><code>git branch -a</code>：查看当前的分支情况</li>
+<li><code>git checkout -b dev</code>：创建一个新的分支，dev代表development，开发分支</li>
+<li><code>git checkout master</code>：切换到master分支下</li>
+<li><code>git merge dev</code>：在要合并到的主分支（master）下操作，将dev合并到master</li>
+<li><code>git reset HEAD</code>: 取消已经缓存的内容</li>
+<li><code>git rm</code>: 手动删除文件</li>
+<li><code>git push origin master</code>: 上传缓冲区的文件到远程仓库</li>
+<li><code>git config --list</code>: 查看用户配置</li>
 </ul>
-<p>![]1585211443090.png)</p>
+<p><img src="/2020/04/02/git/1585211443090.png" alt></p>
 <ul>
 <li><p>当开发（dev）工作结束，需要删除分支时</p>
 <p><code>git branch -D dev</code>：dev指你想要的删除的分支名，只在本地删除了分支，远程的库的分支还存在</p>
 </li>
 </ul>
-<p><img src="/2020/04/02/Git%E5%AE%89%E8%A3%85%E5%92%8C%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4%E6%93%8D%E4%BD%9C/1585211621161.png" alt></p>
+<p><img src="/2020/04/02/git/1585211621161.png" alt></p>
 <ul>
 <li><p>如何删除本地的分支呢</p>
 <p><code>git push origin :dev</code>：冒号前面留空是说明本地的dev为空了，传到远程的dev分支</p>
 </li>
 </ul>
-<p>![]1585211771370.png)</p>
-<p><img src="/2020/04/02/Git%E5%AE%89%E8%A3%85%E5%92%8C%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4%E6%93%8D%E4%BD%9C/1585211784188.png" alt></p>
+<p><img src="/2020/04/02/git/1585211771370.png" alt></p>
+<p><img src="/2020/04/02/git/1585211784188.png" alt></p>
 <ul>
 <li>想要退回到以前的版本：<code>git reset --hard head^</code></li>
 <li>如果又想回到上上次的版本：<code>git log</code></li>
 <li>查看日志：<code>git reflog</code></li>
 </ul>
-<p><img src="/2020/04/02/Git%E5%AE%89%E8%A3%85%E5%92%8C%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4%E6%93%8D%E4%BD%9C/1585212204590.png" alt></p>
+<p><img src="/2020/04/02/git/1585212204590.png" alt></p>
 <ul>
 <li>回退到你想要的任何时间的版本：<code>git reset --hard 代号</code>，代号是指你在日志查看了想要返回版本的对应的代码，对应黄色字体，或者写<code>HEAD{Num}</code></li>
 </ul>
-<p><img src="/2020/04/02/Git%E5%AE%89%E8%A3%85%E5%92%8C%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4%E6%93%8D%E4%BD%9C/1585212318699.png" alt></p>
+<p><img src="/2020/04/02/git/1585212318699.png" alt></p>
+<h4 id="连接到远程的库操作"><a href="#连接到远程的库操作" class="headerlink" title="连接到远程的库操作"></a>连接到远程的库操作</h4><p>1 设置用户名和邮箱,方便每次提交到github</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;xxx&quot; &#x2F;&#x2F; xx -&gt; github的用户名</span><br><span class="line">git config --global user.email &quot;xxx@xx.com&quot; &#x2F;&#x2F; -&gt; github的私人邮箱&#x2F;公开邮箱(设置的是不是私人,如果是私人的,填github生成的那个,可以在 个人-&gt; Settings -&gt; email 可以看到</span><br></pre></td></tr></table></figure>
+
+<p>2 查看有没有填写正确</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+
+<p>3 本地生成ssh公匙</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxx@xx.com&quot; &#x2F;&#x2F;与上面设置的一致就可以</span><br></pre></td></tr></table></figure>
+
+<p>4 连接到github库</p>
+<ul>
+<li><p>先找到<code>ssh/id_rsa.pub</code>文件,<code>copy</code>下来</p>
+</li>
+<li><p><code>Settings</code>-&gt;<code>SSH keys</code>-&gt;<code>New SSH key</code>添加</p>
+</li>
+<li><p>使用命令<code>ssh -T git@github.com</code>,显示成功就可以进行提交到库的操作了</p>
+</li>
+<li><p>在自己的github上看看有没有提交成功</p>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>git</category>

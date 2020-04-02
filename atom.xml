@@ -17,9 +17,9 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Git安装和一些常见指令操作</title>
-    <link href="https://kittychen.github.io/2020/04/02/Git%E5%AE%89%E8%A3%85%E5%92%8C%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4%E6%93%8D%E4%BD%9C/"/>
-    <id>https://kittychen.github.io/2020/04/02/Git%E5%AE%89%E8%A3%85%E5%92%8C%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4%E6%93%8D%E4%BD%9C/</id>
+    <title>Git安装 | 一些常见指令操作 | 连接到github</title>
+    <link href="https://kittychen.github.io/2020/04/02/git/"/>
+    <id>https://kittychen.github.io/2020/04/02/git/</id>
     <published>2020-04-02T10:24:38.000Z</published>
     <updated>2020-04-02T10:24:38.000Z</updated>
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;h3 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;Git&lt;/h3&gt;&lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot;
+          &lt;h4 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git clone
         
       
     
