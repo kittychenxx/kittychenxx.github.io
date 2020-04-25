@@ -12,7 +12,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    Git安装 | 一些常见指令操作 | 连接到github |  Kellyjackie
+    css border属性画气泡对话框 |  Kellyjackie
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
@@ -40,7 +40,7 @@
       <section class="outer">
   
 <!-- 文章页面的样式 -->
-<article id="post-git" class="article article-type-post" itemscope
+<article id="post-css-border属性画气泡对话框" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -48,7 +48,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  Git安装 | 一些常见指令操作 | 连接到github
+  css border属性画气泡对话框
 </h1>
  
 
@@ -58,11 +58,11 @@
     
     <div class="article-meta">
       <a href="" class="article-date">
-  <time datetime="2020-04-02T10:24:38.000Z" itemprop="datePublished">2020-04-02</time>
+  <time datetime="2020-04-25T07:16:51.000Z" itemprop="datePublished">2020-04-25</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="../../../../categories/git/">git</a>
+    <a class="article-category-link" href="../../../../categories/CSS/">CSS</a>
   </div>
 
       
@@ -72,7 +72,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">743字</span>
+            <span class="post-count">615字</span>
         </span>
     </span>
 
@@ -81,7 +81,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2分钟</span>
+            <span class="post-count">3分钟</span>
         </span>
     </span>
 </div>
@@ -106,77 +106,31 @@
       
 
       
-      <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ul>
-<li><code>git clone [url]</code>：下载库的链接，打开自己库就可以复制到bash</li>
-<li><code>git remote set-url 对应的ssh链接</code></li>
-</ul>
-<h4 id="创建版本号"><a href="#创建版本号" class="headerlink" title="创建版本号"></a>创建版本号</h4><ul>
-<li><code>mkdir kittychen</code>：创建一个空的目录</li>
-<li><code>pwd</code>：显示当前目录</li>
-<li><code>git init</code>：在切换到创建的空目录前提下，让目录变成Git可以管理的仓库</li>
-<li><code>.git</code>目录是Git用来跟踪版本库的，如果没看到，用<code>ls -ah</code>可以看见</li>
-</ul>
-<h4 id="提交到Git库-一定要在一开始创建的目录下"><a href="#提交到Git库-一定要在一开始创建的目录下" class="headerlink" title="提交到Git库(一定要在一开始创建的目录下)"></a>提交到Git库(一定要在一开始创建的目录下)</h4><ul>
-<li><code>git add</code>：把文件添加到缓冲区，等待提交</li>
-<li><code>git commit -m &quot;xxx&quot;</code>：把文件提交到仓库，可以加上 <code>-m &quot;xxx&quot;</code> 输入本次提交的说明，<code>1 file changed</code>：1个文件被改动；<code>2 insertions</code>：插入了两行内容</li>
-<li>为什么需要<code>add</code>，<code>commit</code>，因为可以一次提交多个<code>add</code>不同的文件</li>
-</ul>
-<h4 id="Git操作"><a href="#Git操作" class="headerlink" title="Git操作"></a>Git操作</h4><ul>
-<li><code>git status</code>：查看工作区的工作状态</li>
-<li><code>git diff</code>：如果<code>git status</code>显示修改过，则可以查看修改内容</li>
-<li><code>git branch -a</code>：查看当前的分支情况</li>
-<li><code>git checkout -b dev</code>：创建一个新的分支，dev代表development，开发分支</li>
-<li><code>git checkout master</code>：切换到master分支下</li>
-<li><code>git merge dev</code>：在要合并到的主分支（master）下操作，将dev合并到master</li>
-<li><code>git reset HEAD</code>: 取消已经缓存的内容</li>
-<li><code>git rm</code>: 手动删除文件</li>
-<li><code>git push origin master</code>: 上传缓冲区的文件到远程仓库</li>
-<li><code>git config --list</code>: 查看用户配置</li>
-</ul>
-<p><img src="/2020/04/02/git/1585211443090.png" alt></p>
-<ul>
-<li><p>当开发（dev）工作结束，需要删除分支时</p>
-<p><code>git branch -D dev</code>：dev指你想要的删除的分支名，只在本地删除了分支，远程的库的分支还存在</p>
-</li>
-</ul>
-<p><img src="/2020/04/02/git/1585211621161.png" alt></p>
-<ul>
-<li><p>如何删除本地的分支呢</p>
-<p><code>git push origin :dev</code>：冒号前面留空是说明本地的dev为空了，传到远程的dev分支</p>
-</li>
-</ul>
-<p><img src="/2020/04/02/git/1585211771370.png" alt></p>
-<p><img src="/2020/04/02/git/1585211784188.png" alt></p>
-<ul>
-<li>想要退回到以前的版本：<code>git reset --hard head^</code></li>
-<li>如果又想回到上上次的版本：<code>git log</code></li>
-<li>查看日志：<code>git reflog</code></li>
-</ul>
-<p><img src="/2020/04/02/git/1585212204590.png" alt></p>
-<ul>
-<li>回退到你想要的任何时间的版本：<code>git reset --hard 代号</code>，代号是指你在日志查看了想要返回版本的对应的代码，对应黄色字体，或者写<code>HEAD{Num}</code></li>
-</ul>
-<p><img src="/2020/04/02/git/1585212318699.png" alt></p>
-<h4 id="连接到远程的库操作"><a href="#连接到远程的库操作" class="headerlink" title="连接到远程的库操作"></a>连接到远程的库操作</h4><p>1 设置用户名和邮箱,方便每次提交到github</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;xxx&quot; &#x2F;&#x2F; xx -&gt; github的用户名</span><br><span class="line">git config --global user.email &quot;xxx@xx.com&quot; &#x2F;&#x2F; -&gt; github的私人邮箱&#x2F;公开邮箱(设置的是不是私人,如果是私人的,填github生成的那个,可以在 个人-&gt; Settings -&gt; email 可以看到</span><br></pre></td></tr></table></figure>
+      <h3 id="css-border属性画气泡对话框"><a href="#css-border属性画气泡对话框" class="headerlink" title="css border属性画气泡对话框"></a>css border属性画气泡对话框</h3><ol>
+<li>利用伪元素实现三角</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.test-div</span>&#123;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">position</span>: <span class="selector-tag">relative</span>;  <span class="comment">/*日常相对定位*/</span></span></span><br><span class="line"><span class="css">      <span class="selector-tag">width</span><span class="selector-pseudo">:150px</span>;</span></span><br><span class="line">      height: 36px;</span><br><span class="line"><span class="css">      <span class="selector-tag">border</span><span class="selector-pseudo">:black</span> 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">border-radius</span><span class="selector-pseudo">:5px</span>;</span></span><br><span class="line">      background: rgba(245,245,245,1)    &#125;</span><br><span class="line"><span class="css">  <span class="selector-class">.test-div</span><span class="selector-pseudo">:before</span>,<span class="selector-class">.test-div</span><span class="selector-pseudo">:after</span>&#123;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">content</span>: "";  <span class="comment">/*:before和:after必带技能，重要性为满5颗星*/</span></span></span><br><span class="line">      display: block;</span><br><span class="line"><span class="css">      <span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;  <span class="comment">/*日常绝对定位*/</span></span></span><br><span class="line"><span class="css">      <span class="selector-tag">top</span><span class="selector-pseudo">:8px</span>;</span></span><br><span class="line">      width: 0;</span><br><span class="line">      height: 0;</span><br><span class="line">      border:6px red solid; //使用红色是为了效果明显</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test-div"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>2 查看有没有填写正确</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587262732468.png" alt></p>
+<p><code>.test-div:after</code>和<code>.test-div:before</code>是利用层叠实现的对话框前面的小三角（需要把上面边设置为透明，修改伪元素的border:6px transparent solid; </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.test-div</span><span class="selector-pseudo">:before</span>&#123;</span><br><span class="line">       <span class="attribute">left</span>:-<span class="number">11px</span>;</span><br><span class="line">       //border-right-color: rgba(245,245,245,1);</span><br><span class="line">       <span class="selector-tag">z-index</span><span class="selector-pseudo">:1</span>    &#125; <span class="comment">/* 优先显示before */</span></span><br><span class="line">    <span class="selector-class">.test-div</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">       <span class="attribute">left</span>:-<span class="number">12px</span>;</span><br><span class="line">       //border-right-color: rgba(0,0,0,1);</span><br><span class="line">       <span class="selector-tag">z-index</span>: 0    &#125; <span class="comment">/*在before的下一层*/</span></span><br></pre></td></tr></table></figure>
 
-<p>3 本地生成ssh公匙</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxx@xx.com&quot; &#x2F;&#x2F;与上面设置的一致就可以</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587266447857.png" alt></p>
+<p>还原原来的代码，可以看到气泡对话框的效果</p>
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587262778178.png" alt></p>
+<ol start="2">
+<li>纯css实现圆角</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>我是一只小小鸟、小小鸟！<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bot"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.box</span>&#123;<span class="attribute">width</span>:<span class="number">500px</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.top</span>&#123;<span class="attribute">border-bottom</span>:<span class="number">3px</span> solid;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#000000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#cc0000</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted transparent;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">border-right</span><span class="selector-pseudo">:3px</span> <span class="selector-tag">dotted</span> <span class="selector-tag">transparent</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.center</span>&#123;<span class="attribute">padding</span>:<span class="number">10px</span> <span class="number">20px</span>; <span class="attribute">color</span>:white; <span class="attribute">font-size</span>:<span class="number">14px</span>; <span class="attribute">background</span>:<span class="number">#cc0000</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.bot</span>&#123;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#cc0000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#cccccc</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted transparent;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">border-right</span><span class="selector-pseudo">:3px</span> <span class="selector-tag">dotted</span> <span class="selector-tag">transparent</span>;&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>4 连接到github库</p>
-<ul>
-<li><p>先找到<code>ssh/id_rsa.pub</code>文件,<code>copy</code>下来</p>
-</li>
-<li><p><code>Settings</code>-&gt;<code>SSH keys</code>-&gt;<code>New SSH key</code>添加</p>
-</li>
-<li><p>使用命令<code>ssh -T git@github.com</code>,显示成功就可以进行提交到库的操作了</p>
-</li>
-<li><p>在自己的github上看看有没有提交成功</p>
-</li>
-</ul>
+<p>对话框的盒子其实是被分成了三份，上下需要设置border相关属性来实现想要的效果，中间是文字</p>
+<p>圆角的实现是利用了一个长方形分成下面这样，将上边框、左边框、右边框的颜色设置为transparent，其实下面的<code>border-top-color</code>可以删去，不会有影响，也没给它设置长度，还有值得注意一点是dotted、solid，两个的样式的差别都不大，我是看不出来，感兴趣的可以试试</p>
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587264036909.png" alt></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">		<span class="selector-class">.top</span>&#123;<span class="attribute">border-bottom</span>:<span class="number">3px</span> solid;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#000000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#f3d3d3</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted red;<span class="attribute">border-right</span>:<span class="number">3px</span> dotted red;&#125;</span><br><span class="line">    <span class="selector-class">.center</span>&#123;<span class="attribute">padding</span>:<span class="number">10px</span> <span class="number">20px</span>; <span class="attribute">color</span>:white; <span class="attribute">font-size</span>:<span class="number">14px</span>; <span class="attribute">background</span>:<span class="number">#cc0000</span>;&#125;</span><br><span class="line">    <span class="selector-class">.bot</span>&#123;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#cc0000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#cccccc</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted transparent;</span><br><span class="line">    <span class="attribute">border-right</span>:<span class="number">3px</span> dotted transparent;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587266216116.png" alt></p>
+<p>学习文章：<a href="[https://www.zhangxinxu.com/wordpress/2010/05/css-border%e4%b8%89%e8%a7%92%e3%80%81%e5%9c%86%e8%a7%92%e5%9b%be%e5%bd%a2%e7%94%9f%e6%88%90%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b/](https://www.zhangxinxu.com/wordpress/2010/05/css-border三角、圆角图形生成技术简介/)">张鑫旭老师的CSS border三角、圆角图形生成技术简介</a></p>
+<p>学习文章：<a href="https://mp.weixin.qq.com/s?__biz=MjM5NTM1NDcyOQ==&amp;mid=404124362&amp;idx=1&amp;sn=ffcd61e517ca0fb688a8397bde7f5d4d&amp;scene=0#wechat_redirect" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MjM5NTM1NDcyOQ==&amp;mid=404124362&amp;idx=1&amp;sn=ffcd61e517ca0fb688a8397bde7f5d4d&amp;scene=0#wechat_redirect</a></p>
 
       
       <!-- reward -->
@@ -231,14 +185,14 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://kittychen.github.io/2020/04/02/git/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://kittychen.github.io/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/git/" rel="tag">git</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/CSS/" rel="tag">CSS</a></li></ul>
 
 
     </footer>
@@ -249,19 +203,10 @@
   
   <nav class="article-nav">
     
-      <a href="../../25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            css border属性画气泡对话框
-          
-        </div>
-      </a>
     
-    
-      <a href="../../../03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/" class="article-nav-link">
+      <a href="../../02/git/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">小白捣腾博客hexo</div>
+        <div class="article-nav-title">Git安装 | 一些常见指令操作 | 连接到github</div>
       </a>
     
   </nav>
