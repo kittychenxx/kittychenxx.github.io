@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kittychen.github.io/"/>
-  <updated>2020-04-25T07:16:51.000Z</updated>
+  <updated>2020-05-16T10:29:45.000Z</updated>
   <id>https://kittychen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>javascript基础知识</title>
+    <link href="https://kittychen.github.io/2020/05/16/javascript%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>https://kittychen.github.io/2020/05/16/javascript%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+    <published>2020-05-16T10:29:45.000Z</published>
+    <updated>2020-05-16T10:29:45.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;javascript基础&quot;&gt;&lt;a href=&quot;#javascript基础&quot; class=&quot;headerlink&quot; title=&quot;javascript基础 &quot;&gt;&lt;/a&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JS" scheme="https://kittychen.github.io/categories/JS/"/>
+    
+    
+      <category term="JS基础" scheme="https://kittychen.github.io/tags/JS%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>css border属性画气泡对话框</title>
