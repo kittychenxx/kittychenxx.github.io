@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kittychen.github.io/"/>
-  <updated>2020-05-28T03:37:10.000Z</updated>
+  <updated>2020-05-28T10:26:21.000Z</updated>
   <id>https://kittychen.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机网络之OSI7层模型</title>
+    <link href="https://kittychen.github.io/2020/05/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B9%8BOSI%E7%9A%847%E5%B1%82%E6%A8%A1%E5%9E%8B/"/>
+    <id>https://kittychen.github.io/2020/05/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B9%8BOSI%E7%9A%847%E5%B1%82%E6%A8%A1%E5%9E%8B/</id>
+    <published>2020-05-28T10:26:21.000Z</published>
+    <updated>2020-05-28T10:26:21.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;ISO是国际的一个认证规范，OSI是7层网络模型&quot;&gt;&lt;a href=&quot;#ISO是国际的一个认证规范，OSI是7层网络模型&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="计算机网络" scheme="https://kittychen.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="OSI模型" scheme="https://kittychen.github.io/tags/OSI%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS渐变属性linear-gradient</title>

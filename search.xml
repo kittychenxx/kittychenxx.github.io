@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>计算机网络之OSI7层模型</title>
+    <url>/2020/05/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B9%8BOSI%E7%9A%847%E5%B1%82%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h3 id="ISO是国际的一个认证规范，OSI是7层网络模型"><a href="#ISO是国际的一个认证规范，OSI是7层网络模型" class="headerlink" title="ISO是国际的一个认证规范，OSI是7层网络模型"></a><strong>ISO是国际的一个认证规范，OSI是7层网络模型</strong></h3><p><img src="https://user-gold-cdn.xitu.io/2020/5/28/1725ac992d03f22e?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="7层模型结构"></p>
+<h2 id="OSI7层模型"><a href="#OSI7层模型" class="headerlink" title="OSI7层模型"></a>OSI7层模型</h2><pre><code>1、物理层： 常见的标准（RJ-11 RJ-45）【看得见摸得着的电线、电缆还有电压】
+2、数据链路层： 常见的标准MAC地址 二级网络 交换机
+3、网络层： 标准 IP地址 路由器 三层网络 
+            公网IP    相当于家庭地址 可以和全世界通信
+            私网IP   局域网内
+                    192.168.0.1
+                    192.168.2.0
+                    192.168.2.1
+4、传输层： TCP稳定链接 UDP传输方式
+5、会话层： Linux C /Unix C 语言编程  控制包数据 
+6、表示层： 文件的格式、类型 TEXT IMG MP4 JPEG 等加密的处理
+7、应用层： 一般是操作系统的一些程序 QQ 微信..
+            标准  HTTP 80端口      HTTPS  443端口     FTP  21端口    SSH 22端口 </code></pre><p><strong>开发人员主要在会话层、表示层、应用层开发</strong></p>
+<h3 id="数据封包的过程"><a href="#数据封包的过程" class="headerlink" title="数据封包的过程"></a><strong>数据封包的过程</strong></h3><p>数据data</p>
+<ul>
+<li>在应用层传输到表示层：hello world (表示层识别数据的类型 TEXT)</li>
+<li>到会话层：建立会话</li>
+<li>到传输层：会给数据加协议（TCP/UDP）的报头  加字段</li>
+<li>到网络层：再加上IP地址的报头  变成数据包</li>
+<li>到链路层：记录一些硬件信息，例如以太的报头  变成帧</li>
+<li>到物理层：在物理层都变成了二进制数据，变成电信号，通过网络发送给另一台主机</li>
+</ul>
+<h3 id="数据解包过程"><a href="#数据解包过程" class="headerlink" title="数据解包过程"></a>数据解包过程</h3><ul>
+<li>物理层   网卡 电信号  0111011 二进制的信息</li>
+<li>链路层   以太信息</li>
+<li>网络层   获取IP</li>
+<li>传输层   获取传输的协议TCP   </li>
+<li>会话层   建立SOCKET连接</li>
+<li>表示层   获取数据的类型 TEXT IMG PNG</li>
+<li>应用层   向操作系统要数据  hello world</li>
+</ul>
+<p><img src="https://user-gold-cdn.xitu.io/2020/5/28/1725ace14387ab9d?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
+<h3 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h3><pre><code>1、便于集成管理
+2、较低的层可以为较高的层提供服务
+3、减少复杂性，允许更容易编程改变和快速评估
+4、各层间标准化接口，允许不同的产品只提供各层功能的一部分（如路由器在第一层到第三层）</code></pre>]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
+      <tags>
+        <tag>OSI模型</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS渐变属性linear-gradient</title>
     <url>/2020/05/28/CSS%E6%B8%90%E5%8F%98%E5%B1%9E%E6%80%A7linear-gradient/</url>
     <content><![CDATA[<h2 id="CSS渐变属性linear-gradient"><a href="#CSS渐变属性linear-gradient" class="headerlink" title="CSS渐变属性linear-gradient"></a>CSS渐变属性linear-gradient</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.n1</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(<span class="number">0deg</span>,pink, black);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.n2</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(<span class="number">90deg</span>,pink, black);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.n3</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(<span class="number">180deg</span>,pink, black);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.n4</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(-<span class="number">90deg</span>,pink, black);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
