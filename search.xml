@@ -1,53 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>计算机网络之OSI7层模型</title>
-    <url>/2020/05/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B9%8BOSI%E7%9A%847%E5%B1%82%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h3 id="ISO是国际的一个认证规范，OSI是7层网络模型"><a href="#ISO是国际的一个认证规范，OSI是7层网络模型" class="headerlink" title="ISO是国际的一个认证规范，OSI是7层网络模型"></a><strong>ISO是国际的一个认证规范，OSI是7层网络模型</strong></h3><p><img src="https://user-gold-cdn.xitu.io/2020/5/28/1725ac992d03f22e?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="7层模型结构"></p>
-<h2 id="OSI7层模型"><a href="#OSI7层模型" class="headerlink" title="OSI7层模型"></a>OSI7层模型</h2><pre><code>1、物理层： 常见的标准（RJ-11 RJ-45）【看得见摸得着的电线、电缆还有电压】
-2、数据链路层： 常见的标准MAC地址 二级网络 交换机
-3、网络层： 标准 IP地址 路由器 三层网络 
-            公网IP    相当于家庭地址 可以和全世界通信
-            私网IP   局域网内
-                    192.168.0.1
-                    192.168.2.0
-                    192.168.2.1
-4、传输层： TCP稳定链接 UDP传输方式
-5、会话层： Linux C /Unix C 语言编程  控制包数据 
-6、表示层： 文件的格式、类型 TEXT IMG MP4 JPEG 等加密的处理
-7、应用层： 一般是操作系统的一些程序 QQ 微信..
-            标准  HTTP 80端口      HTTPS  443端口     FTP  21端口    SSH 22端口 </code></pre><p><strong>开发人员主要在会话层、表示层、应用层开发</strong></p>
-<h3 id="数据封包的过程"><a href="#数据封包的过程" class="headerlink" title="数据封包的过程"></a><strong>数据封包的过程</strong></h3><p>数据data</p>
-<ul>
-<li>在应用层传输到表示层：hello world (表示层识别数据的类型 TEXT)</li>
-<li>到会话层：建立会话</li>
-<li>到传输层：会给数据加协议（TCP/UDP）的报头  加字段</li>
-<li>到网络层：再加上IP地址的报头  变成数据包</li>
-<li>到链路层：记录一些硬件信息，例如以太的报头  变成帧</li>
-<li>到物理层：在物理层都变成了二进制数据，变成电信号，通过网络发送给另一台主机</li>
-</ul>
-<h3 id="数据解包过程"><a href="#数据解包过程" class="headerlink" title="数据解包过程"></a>数据解包过程</h3><ul>
-<li>物理层   网卡 电信号  0111011 二进制的信息</li>
-<li>链路层   以太信息</li>
-<li>网络层   获取IP</li>
-<li>传输层   获取传输的协议TCP   </li>
-<li>会话层   建立SOCKET连接</li>
-<li>表示层   获取数据的类型 TEXT IMG PNG</li>
-<li>应用层   向操作系统要数据  hello world</li>
-</ul>
-<p><img src="https://user-gold-cdn.xitu.io/2020/5/28/1725ace14387ab9d?imageView2/0/w/1280/h/960/format/webp/ignore-error/1" alt="img"></p>
-<h3 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h3><pre><code>1、便于集成管理
-2、较低的层可以为较高的层提供服务
-3、减少复杂性，允许更容易编程改变和快速评估
-4、各层间标准化接口，允许不同的产品只提供各层功能的一部分（如路由器在第一层到第三层）</code></pre>]]></content>
-      <categories>
-        <category>计算机网络</category>
-      </categories>
-      <tags>
-        <tag>OSI模型</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CSS渐变属性linear-gradient</title>
     <url>/2020/05/28/CSS%E6%B8%90%E5%8F%98%E5%B1%9E%E6%80%A7linear-gradient/</url>
     <content><![CDATA[<h2 id="CSS渐变属性linear-gradient"><a href="#CSS渐变属性linear-gradient" class="headerlink" title="CSS渐变属性linear-gradient"></a>CSS渐变属性linear-gradient</h2><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.n1</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(<span class="number">0deg</span>,pink, black);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.n2</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(<span class="number">90deg</span>,pink, black);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.n3</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(<span class="number">180deg</span>,pink, black);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.n4</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(-<span class="number">90deg</span>,pink, black);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -73,60 +26,6 @@
       </categories>
       <tags>
         <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Javascript之深拷贝与浅拷贝的理解和实现</title>
-    <url>/2020/05/28/Javascript%E4%B9%8B%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8C%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<h2 id="JS之浅拷贝和深拷贝的理解与实现"><a href="#JS之浅拷贝和深拷贝的理解与实现" class="headerlink" title="JS之浅拷贝和深拷贝的理解与实现"></a>JS之浅拷贝和深拷贝的理解与实现</h2><h3 id="二者的区别"><a href="#二者的区别" class="headerlink" title="二者的区别"></a>二者的区别</h3><p>浅拷贝的理解：只拷贝对象的一层</p>
-<p>深拷贝的理解：可以拷贝对象每一层的数据</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> oldobj = &#123;</span><br><span class="line">    name: <span class="string">'kitty'</span>,</span><br><span class="line">    age: <span class="number">22</span>,</span><br><span class="line">    msg: &#123;</span><br><span class="line">        a: <span class="string">'apple'</span>,</span><br><span class="line">        b: <span class="string">'boy'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    color: [<span class="string">'pink'</span>, <span class="string">'black'</span>],</span><br><span class="line">    fn:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">console</span>.log(<span class="keyword">this</span>);&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> newobj = &#123;&#125;;</span><br></pre></td></tr></table></figure>
-
-<h3 id="浅拷贝的方法"><a href="#浅拷贝的方法" class="headerlink" title="浅拷贝的方法"></a>浅拷贝的方法</h3><ul>
-<li>遍历拷贝对象</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//遍历每一项</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> k <span class="keyword">in</span> oldobj)&#123;</span><br><span class="line">  newobj[k]=oldobj[k];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>Object.assign()语法糖</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Object</span>.assign(newobj,oldobj)</span><br><span class="line">newobj.age = <span class="number">23</span>;</span><br><span class="line">newobj.msg.a=<span class="string">'repalce'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(newobj);</span><br><span class="line"><span class="built_in">console</span>.log(oldobj);</span><br><span class="line"><span class="comment">//当object只有一层的时候是深拷贝</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://pics.images.ac.cn/image/5ecf308869d77.html" alt="1590632813219"></p>
-<ul>
-<li><p>Array.prototype.concat( ) 【Array.prototype.slice()方法同理】</p>
-<p>拷贝的形式是把对象拷贝存储在一个数组里，如果拷贝的是一个对象，则将对象直接拷贝在数组里，调用的时候是采用</p>
-</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">newobj[<span class="number">0</span>].xxx</span><br></pre></td></tr></table></figure>
-
-<p>​    同时要注意，如果是拷贝一个对象的情况，不管里面存放的属性是什么数据类型，都只进行浅拷贝，拷贝的对象<code>newobj</code>一改，原对象<code>oldobj</code>也会被影响</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">newobj = <span class="built_in">Array</span>.prototype.concat.call(oldobj);</span><br><span class="line">newobj[<span class="number">0</span>].msg.a = <span class="string">'blue'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(newobj);</span><br><span class="line"><span class="built_in">console</span>.log(oldobj);</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://pics.images.ac.cn/image/5ecf3089251cd.html" alt="1590634145125"></p>
-<h3 id="深拷贝的方法"><a href="#深拷贝的方法" class="headerlink" title="深拷贝的方法"></a>深拷贝的方法</h3><ul>
-<li>deepcopy函数封装</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepcopy</span>(<span class="params">newobj,oldobj</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> k <span class="keyword">in</span> oldobj)&#123;</span><br><span class="line">    <span class="keyword">var</span> item=oldobj[k];</span><br><span class="line">    <span class="comment">//判断为数组的类要在OBJECT前面，因为OBJECT是ARRAY的基类</span></span><br><span class="line">    <span class="keyword">if</span>(item <span class="keyword">instanceof</span> <span class="built_in">Array</span>)&#123;</span><br><span class="line">      newobj[k]=[];</span><br><span class="line">      deepcopy(newobj[k],item);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(item <span class="keyword">instanceof</span> <span class="built_in">Object</span>)&#123;</span><br><span class="line">      newobj[k]=item;</span><br><span class="line">      deepcopy(newobj[k],item);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      newobj[k]=item;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> oldobj = &#123;</span><br><span class="line">    name: <span class="string">'kitty'</span>,</span><br><span class="line">    age: <span class="number">22</span>,</span><br><span class="line">    msg: &#123;</span><br><span class="line">        a: <span class="string">'apple'</span>,</span><br><span class="line">        b: <span class="string">'boy'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    color: [<span class="string">'pink'</span>, <span class="string">'black'</span>],</span><br><span class="line">    fn: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="built_in">console</span>.log(<span class="keyword">this</span>); &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> newobj = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果拷贝的是函数，则拷贝到新对象上的是一个对象，不是函数</span></span><br><span class="line">deepcopy(newobj, oldobj);</span><br><span class="line">oldobj.fn();</span><br><span class="line">newobj.fn();<span class="comment">//=&gt;Uncaught TypeError: newobj.fn is not a function</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://pics.images.ac.cn/image/5ecf308c11d73.html" alt="1590635058094"></p>
-<ul>
-<li><p>JSON.parse(JSON.stringify())</p>
-<p>这种方法虽然可以实现深拷贝，但是不可以拷贝函数，因为JSON.stringify() 方法是将一个JavaScript值(对象或者数组)转换为一个 JSON字符串，不能接受函数</p>
-</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">newobj=<span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(oldobj));</span><br><span class="line"><span class="built_in">console</span>.log(newobj);</span><br><span class="line"><span class="built_in">console</span>.log(oldobj);</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://pics.images.ac.cn/image/5ecf308ab4fa6.html" alt="1590635492147"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>其实深拷贝和浅拷贝的区别是要看你拷贝的对象的数据类型，如果是普通数据类型（number、string、array、boolean…)，都是进行深拷贝，拷贝后的改动不会影响原对象；而拷贝的是引用类型值，则拷贝的就是一个地址，在你修改的过程中，都是在这个地址上操作的，所以肯定是会影响原对象的，因为新拷贝的和原对象都是指向一个相同的地址</p>
-]]></content>
-      <categories>
-        <category>JS</category>
-      </categories>
-      <tags>
-        <tag>深拷贝和浅拷贝</tag>
       </tags>
   </entry>
   <entry>
@@ -378,39 +277,57 @@
       </tags>
   </entry>
   <entry>
-    <title>css border属性画气泡对话框</title>
-    <url>/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/</url>
-    <content><![CDATA[<h3 id="css-border属性画气泡对话框"><a href="#css-border属性画气泡对话框" class="headerlink" title="css border属性画气泡对话框"></a>css border属性画气泡对话框</h3><ol>
-<li>利用伪元素实现三角</li>
-</ol>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.test-div</span>&#123;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">position</span>: <span class="selector-tag">relative</span>;  <span class="comment">/*日常相对定位*/</span></span></span><br><span class="line"><span class="css">      <span class="selector-tag">width</span><span class="selector-pseudo">:150px</span>;</span></span><br><span class="line">      height: 36px;</span><br><span class="line"><span class="css">      <span class="selector-tag">border</span><span class="selector-pseudo">:black</span> 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">border-radius</span><span class="selector-pseudo">:5px</span>;</span></span><br><span class="line">      background: rgba(245,245,245,1)    &#125;</span><br><span class="line"><span class="css">  <span class="selector-class">.test-div</span><span class="selector-pseudo">:before</span>,<span class="selector-class">.test-div</span><span class="selector-pseudo">:after</span>&#123;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">content</span>: "";  <span class="comment">/*:before和:after必带技能，重要性为满5颗星*/</span></span></span><br><span class="line">      display: block;</span><br><span class="line"><span class="css">      <span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;  <span class="comment">/*日常绝对定位*/</span></span></span><br><span class="line"><span class="css">      <span class="selector-tag">top</span><span class="selector-pseudo">:8px</span>;</span></span><br><span class="line">      width: 0;</span><br><span class="line">      height: 0;</span><br><span class="line">      border:6px red solid; //使用红色是为了效果明显</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test-div"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    <title>Javascript之深拷贝与浅拷贝的理解和实现</title>
+    <url>/2020/05/28/Javascript%E4%B9%8B%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8C%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<h2 id="JS之浅拷贝和深拷贝的理解与实现"><a href="#JS之浅拷贝和深拷贝的理解与实现" class="headerlink" title="JS之浅拷贝和深拷贝的理解与实现"></a>JS之浅拷贝和深拷贝的理解与实现</h2><h3 id="二者的区别"><a href="#二者的区别" class="headerlink" title="二者的区别"></a>二者的区别</h3><p>浅拷贝的理解：只拷贝对象的一层</p>
+<p>深拷贝的理解：可以拷贝对象每一层的数据</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> oldobj = &#123;</span><br><span class="line">    name: <span class="string">'kitty'</span>,</span><br><span class="line">    age: <span class="number">22</span>,</span><br><span class="line">    msg: &#123;</span><br><span class="line">        a: <span class="string">'apple'</span>,</span><br><span class="line">        b: <span class="string">'boy'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    color: [<span class="string">'pink'</span>, <span class="string">'black'</span>],</span><br><span class="line">    fn:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">console</span>.log(<span class="keyword">this</span>);&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> newobj = &#123;&#125;;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587262732468.png" alt></p>
-<p><code>.test-div:after</code>和<code>.test-div:before</code>是利用层叠实现的对话框前面的小三角（需要把上面边设置为透明，修改伪元素的border:6px transparent solid; </p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.test-div</span><span class="selector-pseudo">:before</span>&#123;</span><br><span class="line">       <span class="attribute">left</span>:-<span class="number">11px</span>;</span><br><span class="line">       //border-right-color: rgba(245,245,245,1);</span><br><span class="line">       <span class="selector-tag">z-index</span><span class="selector-pseudo">:1</span>    &#125; <span class="comment">/* 优先显示before */</span></span><br><span class="line">    <span class="selector-class">.test-div</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">       <span class="attribute">left</span>:-<span class="number">12px</span>;</span><br><span class="line">       //border-right-color: rgba(0,0,0,1);</span><br><span class="line">       <span class="selector-tag">z-index</span>: 0    &#125; <span class="comment">/*在before的下一层*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="浅拷贝的方法"><a href="#浅拷贝的方法" class="headerlink" title="浅拷贝的方法"></a>浅拷贝的方法</h3><ul>
+<li>遍历拷贝对象</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//遍历每一项</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> k <span class="keyword">in</span> oldobj)&#123;</span><br><span class="line">  newobj[k]=oldobj[k];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587266447857.png" alt></p>
-<p>还原原来的代码，可以看到气泡对话框的效果</p>
-<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587262778178.png" alt></p>
-<ol start="2">
-<li>纯css实现圆角</li>
-</ol>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>我是一只小小鸟、小小鸟！<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bot"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.box</span>&#123;<span class="attribute">width</span>:<span class="number">500px</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.top</span>&#123;<span class="attribute">border-bottom</span>:<span class="number">3px</span> solid;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#000000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#cc0000</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted transparent;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">border-right</span><span class="selector-pseudo">:3px</span> <span class="selector-tag">dotted</span> <span class="selector-tag">transparent</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.center</span>&#123;<span class="attribute">padding</span>:<span class="number">10px</span> <span class="number">20px</span>; <span class="attribute">color</span>:white; <span class="attribute">font-size</span>:<span class="number">14px</span>; <span class="attribute">background</span>:<span class="number">#cc0000</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.bot</span>&#123;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#cc0000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#cccccc</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted transparent;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">border-right</span><span class="selector-pseudo">:3px</span> <span class="selector-tag">dotted</span> <span class="selector-tag">transparent</span>;&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Object.assign()语法糖</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Object</span>.assign(newobj,oldobj)</span><br><span class="line">newobj.age = <span class="number">23</span>;</span><br><span class="line">newobj.msg.a=<span class="string">'repalce'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(newobj);</span><br><span class="line"><span class="built_in">console</span>.log(oldobj);</span><br><span class="line"><span class="comment">//当object只有一层的时候是深拷贝</span></span><br></pre></td></tr></table></figure>
 
-<p>对话框的盒子其实是被分成了三份，上下需要设置border相关属性来实现想要的效果，中间是文字</p>
-<p>圆角的实现是利用了一个长方形分成下面这样，将上边框、左边框、右边框的颜色设置为transparent，其实下面的<code>border-top-color</code>可以删去，不会有影响，也没给它设置长度，还有值得注意一点是dotted、solid，两个的样式的差别都不大，我是看不出来，感兴趣的可以试试</p>
-<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587264036909.png" alt></p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">		<span class="selector-class">.top</span>&#123;<span class="attribute">border-bottom</span>:<span class="number">3px</span> solid;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#000000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#f3d3d3</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted red;<span class="attribute">border-right</span>:<span class="number">3px</span> dotted red;&#125;</span><br><span class="line">    <span class="selector-class">.center</span>&#123;<span class="attribute">padding</span>:<span class="number">10px</span> <span class="number">20px</span>; <span class="attribute">color</span>:white; <span class="attribute">font-size</span>:<span class="number">14px</span>; <span class="attribute">background</span>:<span class="number">#cc0000</span>;&#125;</span><br><span class="line">    <span class="selector-class">.bot</span>&#123;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#cc0000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#cccccc</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted transparent;</span><br><span class="line">    <span class="attribute">border-right</span>:<span class="number">3px</span> dotted transparent;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://pics.images.ac.cn/image/5ecf308869d77.html" alt="1590632813219"></p>
+<ul>
+<li><p>Array.prototype.concat( ) 【Array.prototype.slice()方法同理】</p>
+<p>拷贝的形式是把对象拷贝存储在一个数组里，如果拷贝的是一个对象，则将对象直接拷贝在数组里，调用的时候是采用</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">newobj[<span class="number">0</span>].xxx</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587266216116.png" alt></p>
-<p>学习文章：<a href="[https://www.zhangxinxu.com/wordpress/2010/05/css-border%e4%b8%89%e8%a7%92%e3%80%81%e5%9c%86%e8%a7%92%e5%9b%be%e5%bd%a2%e7%94%9f%e6%88%90%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b/](https://www.zhangxinxu.com/wordpress/2010/05/css-border三角、圆角图形生成技术简介/)">张鑫旭老师的CSS border三角、圆角图形生成技术简介</a></p>
-<p>学习文章：<a href="https://mp.weixin.qq.com/s?__biz=MjM5NTM1NDcyOQ==&amp;mid=404124362&amp;idx=1&amp;sn=ffcd61e517ca0fb688a8397bde7f5d4d&amp;scene=0#wechat_redirect" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MjM5NTM1NDcyOQ==&amp;mid=404124362&amp;idx=1&amp;sn=ffcd61e517ca0fb688a8397bde7f5d4d&amp;scene=0#wechat_redirect</a></p>
+<p>​    同时要注意，如果是拷贝一个对象的情况，不管里面存放的属性是什么数据类型，都只进行浅拷贝，拷贝的对象<code>newobj</code>一改，原对象<code>oldobj</code>也会被影响</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">newobj = <span class="built_in">Array</span>.prototype.concat.call(oldobj);</span><br><span class="line">newobj[<span class="number">0</span>].msg.a = <span class="string">'blue'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(newobj);</span><br><span class="line"><span class="built_in">console</span>.log(oldobj);</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pics.images.ac.cn/image/5ecf3089251cd.html" alt="1590634145125"></p>
+<h3 id="深拷贝的方法"><a href="#深拷贝的方法" class="headerlink" title="深拷贝的方法"></a>深拷贝的方法</h3><ul>
+<li>deepcopy函数封装</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepcopy</span>(<span class="params">newobj,oldobj</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> k <span class="keyword">in</span> oldobj)&#123;</span><br><span class="line">    <span class="keyword">var</span> item=oldobj[k];</span><br><span class="line">    <span class="comment">//判断为数组的类要在OBJECT前面，因为OBJECT是ARRAY的基类</span></span><br><span class="line">    <span class="keyword">if</span>(item <span class="keyword">instanceof</span> <span class="built_in">Array</span>)&#123;</span><br><span class="line">      newobj[k]=[];</span><br><span class="line">      deepcopy(newobj[k],item);</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(item <span class="keyword">instanceof</span> <span class="built_in">Object</span>)&#123;</span><br><span class="line">      newobj[k]=item;</span><br><span class="line">      deepcopy(newobj[k],item);</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">      newobj[k]=item;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> oldobj = &#123;</span><br><span class="line">    name: <span class="string">'kitty'</span>,</span><br><span class="line">    age: <span class="number">22</span>,</span><br><span class="line">    msg: &#123;</span><br><span class="line">        a: <span class="string">'apple'</span>,</span><br><span class="line">        b: <span class="string">'boy'</span></span><br><span class="line">    &#125;,</span><br><span class="line">    color: [<span class="string">'pink'</span>, <span class="string">'black'</span>],</span><br><span class="line">    fn: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="built_in">console</span>.log(<span class="keyword">this</span>); &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> newobj = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果拷贝的是函数，则拷贝到新对象上的是一个对象，不是函数</span></span><br><span class="line">deepcopy(newobj, oldobj);</span><br><span class="line">oldobj.fn();</span><br><span class="line">newobj.fn();<span class="comment">//=&gt;Uncaught TypeError: newobj.fn is not a function</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pics.images.ac.cn/image/5ecf308c11d73.html" alt="1590635058094"></p>
+<ul>
+<li><p>JSON.parse(JSON.stringify())</p>
+<p>这种方法虽然可以实现深拷贝，但是不可以拷贝函数，因为JSON.stringify() 方法是将一个JavaScript值(对象或者数组)转换为一个 JSON字符串，不能接受函数</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">newobj=<span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(oldobj));</span><br><span class="line"><span class="built_in">console</span>.log(newobj);</span><br><span class="line"><span class="built_in">console</span>.log(oldobj);</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://pics.images.ac.cn/image/5ecf308ab4fa6.html" alt="1590635492147"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>其实深拷贝和浅拷贝的区别是要看你拷贝的对象的数据类型，如果是普通数据类型（number、string、array、boolean…)，都是进行深拷贝，拷贝后的改动不会影响原对象；而拷贝的是引用类型值，则拷贝的就是一个地址，在你修改的过程中，都是在这个地址上操作的，所以肯定是会影响原对象的，因为新拷贝的和原对象都是指向一个相同的地址</p>
 ]]></content>
       <categories>
-        <category>CSS</category>
+        <category>JS</category>
       </categories>
       <tags>
-        <tag>CSS</tag>
+        <tag>深拷贝和浅拷贝</tag>
       </tags>
   </entry>
   <entry>
@@ -491,6 +408,51 @@
       </tags>
   </entry>
   <entry>
+    <title>css border属性画气泡对话框</title>
+    <url>/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/</url>
+    <content><![CDATA[<h3 id="css-border属性画气泡对话框"><a href="#css-border属性画气泡对话框" class="headerlink" title="css border属性画气泡对话框"></a>css border属性画气泡对话框</h3><ol>
+<li>利用伪元素实现三角</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">  <span class="selector-class">.test-div</span>&#123;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">position</span>: <span class="selector-tag">relative</span>;  <span class="comment">/*日常相对定位*/</span></span></span><br><span class="line"><span class="css">      <span class="selector-tag">width</span><span class="selector-pseudo">:150px</span>;</span></span><br><span class="line">      height: 36px;</span><br><span class="line"><span class="css">      <span class="selector-tag">border</span><span class="selector-pseudo">:black</span> 1<span class="selector-tag">px</span> <span class="selector-tag">solid</span>;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">border-radius</span><span class="selector-pseudo">:5px</span>;</span></span><br><span class="line">      background: rgba(245,245,245,1)    &#125;</span><br><span class="line"><span class="css">  <span class="selector-class">.test-div</span><span class="selector-pseudo">:before</span>,<span class="selector-class">.test-div</span><span class="selector-pseudo">:after</span>&#123;</span></span><br><span class="line"><span class="css">      <span class="selector-tag">content</span>: "";  <span class="comment">/*:before和:after必带技能，重要性为满5颗星*/</span></span></span><br><span class="line">      display: block;</span><br><span class="line"><span class="css">      <span class="selector-tag">position</span>: <span class="selector-tag">absolute</span>;  <span class="comment">/*日常绝对定位*/</span></span></span><br><span class="line"><span class="css">      <span class="selector-tag">top</span><span class="selector-pseudo">:8px</span>;</span></span><br><span class="line">      width: 0;</span><br><span class="line">      height: 0;</span><br><span class="line">      border:6px red solid; //使用红色是为了效果明显</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"test-div"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587262732468.png" alt></p>
+<p><code>.test-div:after</code>和<code>.test-div:before</code>是利用层叠实现的对话框前面的小三角（需要把上面边设置为透明，修改伪元素的border:6px transparent solid; </p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.test-div</span><span class="selector-pseudo">:before</span>&#123;</span><br><span class="line">       <span class="attribute">left</span>:-<span class="number">11px</span>;</span><br><span class="line">       //border-right-color: rgba(245,245,245,1);</span><br><span class="line">       <span class="selector-tag">z-index</span><span class="selector-pseudo">:1</span>    &#125; <span class="comment">/* 优先显示before */</span></span><br><span class="line">    <span class="selector-class">.test-div</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">       <span class="attribute">left</span>:-<span class="number">12px</span>;</span><br><span class="line">       //border-right-color: rgba(0,0,0,1);</span><br><span class="line">       <span class="selector-tag">z-index</span>: 0    &#125; <span class="comment">/*在before的下一层*/</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587266447857.png" alt></p>
+<p>还原原来的代码，可以看到气泡对话框的效果</p>
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587262778178.png" alt></p>
+<ol start="2">
+<li>纯css实现圆角</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"top"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center"</span>&gt;</span>我是一只小小鸟、小小鸟！<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"bot"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.box</span>&#123;<span class="attribute">width</span>:<span class="number">500px</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.top</span>&#123;<span class="attribute">border-bottom</span>:<span class="number">3px</span> solid;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#000000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#cc0000</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted transparent;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">border-right</span><span class="selector-pseudo">:3px</span> <span class="selector-tag">dotted</span> <span class="selector-tag">transparent</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.center</span>&#123;<span class="attribute">padding</span>:<span class="number">10px</span> <span class="number">20px</span>; <span class="attribute">color</span>:white; <span class="attribute">font-size</span>:<span class="number">14px</span>; <span class="attribute">background</span>:<span class="number">#cc0000</span>;&#125;</span></span><br><span class="line"><span class="css">    <span class="selector-class">.bot</span>&#123;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#cc0000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#cccccc</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted transparent;</span></span><br><span class="line"><span class="css">    <span class="selector-tag">border-right</span><span class="selector-pseudo">:3px</span> <span class="selector-tag">dotted</span> <span class="selector-tag">transparent</span>;&#125;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>对话框的盒子其实是被分成了三份，上下需要设置border相关属性来实现想要的效果，中间是文字</p>
+<p>圆角的实现是利用了一个长方形分成下面这样，将上边框、左边框、右边框的颜色设置为transparent，其实下面的<code>border-top-color</code>可以删去，不会有影响，也没给它设置长度，还有值得注意一点是dotted、solid，两个的样式的差别都不大，我是看不出来，感兴趣的可以试试</p>
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587264036909.png" alt></p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">		<span class="selector-class">.top</span>&#123;<span class="attribute">border-bottom</span>:<span class="number">3px</span> solid;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#000000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#f3d3d3</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted red;<span class="attribute">border-right</span>:<span class="number">3px</span> dotted red;&#125;</span><br><span class="line">    <span class="selector-class">.center</span>&#123;<span class="attribute">padding</span>:<span class="number">10px</span> <span class="number">20px</span>; <span class="attribute">color</span>:white; <span class="attribute">font-size</span>:<span class="number">14px</span>; <span class="attribute">background</span>:<span class="number">#cc0000</span>;&#125;</span><br><span class="line">    <span class="selector-class">.bot</span>&#123;<span class="attribute">border-top</span>:<span class="number">3px</span> solid; <span class="attribute">border-top-color</span>:<span class="number">#cc0000</span>; <span class="attribute">border-bottom-color</span>:<span class="number">#cccccc</span>; <span class="attribute">border-left</span>:<span class="number">3px</span> dotted transparent;</span><br><span class="line">    <span class="attribute">border-right</span>:<span class="number">3px</span> dotted transparent;&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/04/25/css-border%E5%B1%9E%E6%80%A7%E7%94%BB%E6%B0%94%E6%B3%A1%E5%AF%B9%E8%AF%9D%E6%A1%86/1587266216116.png" alt></p>
+<p>学习文章：<a href="[https://www.zhangxinxu.com/wordpress/2010/05/css-border%e4%b8%89%e8%a7%92%e3%80%81%e5%9c%86%e8%a7%92%e5%9b%be%e5%bd%a2%e7%94%9f%e6%88%90%e6%8a%80%e6%9c%af%e7%ae%80%e4%bb%8b/](https://www.zhangxinxu.com/wordpress/2010/05/css-border三角、圆角图形生成技术简介/)">张鑫旭老师的CSS border三角、圆角图形生成技术简介</a></p>
+<p>学习文章：<a href="https://mp.weixin.qq.com/s?__biz=MjM5NTM1NDcyOQ==&amp;mid=404124362&amp;idx=1&amp;sn=ffcd61e517ca0fb688a8397bde7f5d4d&amp;scene=0#wechat_redirect" target="_blank" rel="noopener">https://mp.weixin.qq.com/s?__biz=MjM5NTM1NDcyOQ==&amp;mid=404124362&amp;idx=1&amp;sn=ffcd61e517ca0fb688a8397bde7f5d4d&amp;scene=0#wechat_redirect</a></p>
+]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客之路开始了</title>
+    <url>/2020/03/29/%E5%8D%9A%E5%AE%A2%E4%B9%8B%E8%B7%AF%E5%BC%80%E5%A7%8B%E4%BA%86/</url>
+    <content><![CDATA[<p>很开始能来到hexo，拥有属于自己的一个博客！</p>
+]]></content>
+      <tags>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小白捣腾博客hexo</title>
     <url>/2020/03/30/%E5%B0%8F%E7%99%BD%E6%8D%A3%E8%85%BE%E5%8D%9A%E5%AE%A2hexo/</url>
     <content><![CDATA[<h3 id="小白捣腾博客hexo"><a href="#小白捣腾博客hexo" class="headerlink" title="小白捣腾博客hexo"></a>小白捣腾博客hexo</h3><p>偶买噶，又在环境里整了半天</p>
@@ -552,12 +514,50 @@
       </tags>
   </entry>
   <entry>
-    <title>博客之路开始了</title>
-    <url>/2020/03/29/%E5%8D%9A%E5%AE%A2%E4%B9%8B%E8%B7%AF%E5%BC%80%E5%A7%8B%E4%BA%86/</url>
-    <content><![CDATA[<p>很开始能来到hexo，拥有属于自己的一个博客！</p>
-]]></content>
+    <title>计算机网络之OSI7层模型</title>
+    <url>/2020/05/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B9%8BOSI%E7%9A%847%E5%B1%82%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<h3 id="ISO是国际的一个认证规范，OSI是7层网络模型"><a href="#ISO是国际的一个认证规范，OSI是7层网络模型" class="headerlink" title="ISO是国际的一个认证规范，OSI是7层网络模型"></a><strong>ISO是国际的一个认证规范，OSI是7层网络模型</strong></h3><p><img src="https://pics.images.ac.cn/image/5ecfa8568019e.html" alt="7层模型结构"></p>
+<h2 id="OSI7层模型"><a href="#OSI7层模型" class="headerlink" title="OSI7层模型"></a>OSI7层模型</h2><pre><code>1、物理层： 常见的标准（RJ-11 RJ-45）【看得见摸得着的电线、电缆还有电压】
+2、数据链路层： 常见的标准MAC地址 二级网络 交换机
+3、网络层： 标准 IP地址 路由器 三层网络 
+            公网IP    相当于家庭地址 可以和全世界通信
+            私网IP   局域网内
+                    192.168.0.1
+                    192.168.2.0
+                    192.168.2.1
+4、传输层： TCP稳定链接 UDP传输方式
+5、会话层： Linux C /Unix C 语言编程  控制包数据 
+6、表示层： 文件的格式、类型 TEXT IMG MP4 JPEG 等加密的处理
+7、应用层： 一般是操作系统的一些程序 QQ 微信..
+            标准  HTTP 80端口      HTTPS  443端口     FTP  21端口    SSH 22端口 </code></pre><p><strong>开发人员主要在会话层、表示层、应用层开发</strong></p>
+<h3 id="数据封包的过程"><a href="#数据封包的过程" class="headerlink" title="数据封包的过程"></a><strong>数据封包的过程</strong></h3><p>数据data</p>
+<ul>
+<li>在应用层传输到表示层：hello world (表示层识别数据的类型 TEXT)</li>
+<li>到会话层：建立会话</li>
+<li>到传输层：会给数据加协议（TCP/UDP）的报头  加字段</li>
+<li>到网络层：再加上IP地址的报头  变成数据包</li>
+<li>到链路层：记录一些硬件信息，例如以太的报头  变成帧</li>
+<li>到物理层：在物理层都变成了二进制数据，变成电信号，通过网络发送给另一台主机</li>
+</ul>
+<h3 id="数据解包过程"><a href="#数据解包过程" class="headerlink" title="数据解包过程"></a>数据解包过程</h3><ul>
+<li>物理层   网卡 电信号  0111011 二进制的信息</li>
+<li>链路层   以太信息</li>
+<li>网络层   获取IP</li>
+<li>传输层   获取传输的协议TCP   </li>
+<li>会话层   建立SOCKET连接</li>
+<li>表示层   获取数据的类型 TEXT IMG PNG</li>
+<li>应用层   向操作系统要数据  hello world</li>
+</ul>
+<p><img src="https://pics.images.ac.cn/image/5ecfa7d35eb1e.html" alt="对等通信"></p>
+<h3 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h3><pre><code>1、便于集成管理
+2、较低的层可以为较高的层提供服务
+3、减少复杂性，允许更容易编程改变和快速评估
+4、各层间标准化接口，允许不同的产品只提供各层功能的一部分（如路由器在第一层到第三层）</code></pre>]]></content>
+      <categories>
+        <category>计算机网络</category>
+      </categories>
       <tags>
-        <tag>心情</tag>
+        <tag>OSI模型</tag>
       </tags>
   </entry>
 </search>
